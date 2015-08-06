@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Aughit by mronian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Aughit</h1>
+      <h2 class="project-tagline">Augmented Computer Vision Event</h2>
+      <a href="https://github.com/mronian/aughit" class="btn">View on GitHub</a>
+      <a href="https://github.com/mronian/aughit/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/mronian/aughit/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <p><img src="http://www.robotix.in/Images/rbtx.png" alt="Alt text"></p>
+
+<h1>
+<a id="aughit--augmented-image-processing-event" class="anchor" href="#aughit--augmented-image-processing-event" aria-hidden="true"><span class="octicon octicon-link"></span></a>AugHit : Augmented Image Processing Event</h1>
+
+<p>This repository contains code for the simulator for the event AugHit conducted during Robotix 2015, Kshitij at IIT Kharagpur. (<a href="http://www.robotix.in/aughit">http://www.robotix.in/aughit</a>)</p>
+
+<p>The simulator has been built using OpenCV on C++ with Box2D Wrapper for Physics and simulations.</p>
+
+<p><strong>Requirements:</strong></p>
+
+<ul>
+<li>OpenCV (2.4.9 or later)</li>
+<li>Box2D</li>
+<li>CMake (&gt;2.6)</li>
+</ul>
+
+<p>To run the game:</p>
+
+<div class="highlight highlight-sh"><pre>$ git clone https://github.com/mronian/aughit.git
+$ <span class="pl-c1">cd</span> aughit
+$ mkdir build
+$ <span class="pl-c1">cd</span> build
+$ cmake ..
+$ make</pre></div>
+
+<p>You will find all the required binaries in the <strong>'build'</strong> folder.</p>
+
+<h2>
+<a id="round-1" class="anchor" href="#round-1" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 1:</h2>
+
+<ul>
+<li>Simple round with fixed number of static bricks.</li>
+</ul>
+
+<p><strong>For Semi-Circular:</strong></p>
+
+<div class="highlight highlight-sh"><pre>$ ./Round1Circular 1</pre></div>
+
+<p><strong>For Rectangular:</strong></p>
+
+<div class="highlight highlight-sh"><pre>$ ./Round1Rectangular 1</pre></div>
+
+<p>Where 1 is the <strong>Camera Index</strong>. By default it is 0.</p>
+
+<p><img src="https://github.com/mronian/aughit/raw/master/Files/Images/Screenshots/Round1Circular.png" alt=""></p>
+
+<h4>
+<a id="round-1--semi-circular-paddle" class="anchor" href="#round-1--semi-circular-paddle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 1 : Semi-Circular Paddle</h4>
+
+<p><img src="https://github.com/mronian/aughit/raw/master/Files/Images/Screenshots/Round1Rectangular.png" alt=""></p>
+
+<h4>
+<a id="round-1--rectangular-paddle" class="anchor" href="#round-1--rectangular-paddle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 1 : Rectangular Paddle</h4>
+
+<h2>
+<a id="round-2" class="anchor" href="#round-2" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 2</h2>
+
+<ul>
+<li>Has false bricks whose ID's can be passed as command-line arguments to the binary.</li>
+</ul>
+
+<p><strong>For Semi-Circular:</strong></p>
+
+<div class="highlight highlight-sh"><pre>$ ./Round2Circular 0 3 5 7</pre></div>
+
+<p><strong>For Rectangular:</strong></p>
+
+<div class="highlight highlight-sh"><pre>$ ./Round2Rectangular 0 3 5 7</pre></div>
+
+<ul>
+<li>Here, as before, 0 is the <strong>Camera Index</strong>. (3, 5, 7) are the ID's of the bricks to be declared as false.</li>
+</ul>
+
+<p><img src="https://github.com/mronian/aughit/raw/master/Files/Images/Screenshots/Round2Circular.png" alt=""></p>
+
+<h4>
+<a id="round-2--semi-circular-paddle" class="anchor" href="#round-2--semi-circular-paddle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 2 : Semi-Circular Paddle</h4>
+
+<p><img src="https://github.com/mronian/aughit/raw/master/Files/Images/Screenshots/Round2Rectangular.png" alt=""></p>
+
+<h4>
+<a id="round-2--rectangular-paddle" class="anchor" href="#round-2--rectangular-paddle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 2 : Rectangular Paddle</h4>
+
+<h2>
+<a id="round-3" class="anchor" href="#round-3" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 3</h2>
+
+<ul>
+<li>Has moving bricks also.</li>
+</ul>
+
+<p><strong>For Semi-Circular:</strong></p>
+
+<div class="highlight highlight-sh"><pre>$ ./Round3Circular 0 3 5 7</pre></div>
+
+<p><strong>For Rectangular:</strong></p>
+
+<div class="highlight highlight-sh"><pre>$ ./Round3Rectangular 0 3 5 7</pre></div>
+
+<p><img src="https://github.com/mronian/aughit/raw/master/Files/Images/Screenshots/Round3Circular1.png" alt=""></p>
+
+<h4>
+<a id="round-3--semi-circular-paddle" class="anchor" href="#round-3--semi-circular-paddle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 3 : Semi-Circular Paddle</h4>
+
+<p><img src="https://github.com/mronian/aughit/raw/master/Files/Images/Screenshots/Round3Rectangular1.png" alt=""></p>
+
+<h4>
+<a id="round-3--rectangular-paddle" class="anchor" href="#round-3--rectangular-paddle" aria-hidden="true"><span class="octicon octicon-link"></span></a>Round 3 : Rectangular Paddle</h4>
+
+<h2>
+<a id="miscellaneous" class="anchor" href="#miscellaneous" aria-hidden="true"><span class="octicon octicon-link"></span></a>Miscellaneous</h2>
+
+<ul>
+<li><p>The dimensions of the game, scaling factor, number of static bricks, number of moving bricks, number of corners, size of the corners are all defined in the <em>Constants.h</em> file. Change accordingly to tweak the game!</p></li>
+<li><p>Use <strong>ClearVid.sh</strong> to clear the video buffer: (Usage Below)</p></li>
+</ul>
+
+<div class="highlight highlight-sh"><pre>$ ./ClearVid.sh</pre></div>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/mronian/aughit">Aughit</a> is maintained by <a href="https://github.com/mronian">mronian</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
