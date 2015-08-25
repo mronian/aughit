@@ -1,4 +1,3 @@
-![Alt text](http://www.robotix.in/Images/rbtx.png)
 AugHit : Augmented Image Processing Event
 =========================================
 This repository contains code for the simulator for the event AugHit conducted during Robotix 2015, Kshitij at IIT Kharagpur. (http://www.robotix.in/aughit)
